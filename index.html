@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playstation Official &reg Site: Consoles Games, Accessories</title>
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=Josefin+Sans:wght@100;400&family=Raleway:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+    <div class="navbar">
+        <img src="images/playstation.png" alt="" class="logo" />
+        <nav>
+            <ul id="menuList">
+                <li><a href="#">Games</a></li>
+                <li><a href="#">Controllers</a></li>
+                <li><a href="#">Supports</a></li>
+                <li><a href="#">Accessories</a></li>
+            </ul>
+        </nav>
+        <img src="images/menu.png" alt="" class="menu"  onclick="togglemenu()" />
+    </div>
+
+
+    <div class="row">
+         <div class="col-1">
+                <h2>PS5 <br />DualShock 4</h2>
+                <h3>Wireless Controller for PlayStation 5</h3>
+
+        <p>(Compatible/Generic)</p>
+        <div class="price">
+            <h4 class="current-price">$40.99</h4>
+            <del>$46.99</del></div>
+         
+         
+            <button type="button" >Buy Now <img src="images/add-to-basket.png" alt="buynow" class="buy"></button>
+        </div>
+
+        <div class="col-2">
+         <img src="images/dualshock.png" alt="" class="controller" />
+         <div class="color-box"></div>
+         <div class="add-btn">
+             <img src="images/plus.png" alt="" />
+             <p class="cart"><small>Add to cart</small></p>
+         </div>
+        </div>
+    </div>
+
+    <div class="social-link">
+            <img src="images/twitter.png" alt="">
+            <img src="images/instagram.png" alt="">
+            <img src="images/facebook.png" alt="">
+        
+    </div>
+</div>
+
+
+<script>
+    var menuList = document.getElementById("menuList");
+    menuList.style.maxHeight = "0px";
+
+    function togglemenu() { 
+
+        if(menuList.style.maxHeight == "0px")
+        {
+            menuList.style.maxHeight = "130px";
+        }
+
+        else{
+            menuList.style.maxHeight = "0px";
+        }
+     }
+
+</script>
+</body>
+</html>
